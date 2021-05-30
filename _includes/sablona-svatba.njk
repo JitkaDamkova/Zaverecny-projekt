@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Svatba snů</title>
+</head>
+<body>
+    <main class="title">
+        <section class="header">
+            <div class="header--level1">
+                <div class="header--level1__logo">
+                   
+                    <img src="/Fotky/Svabasnu_logo.png" alt="logo">
+                </div>
+                <div>
+                    <ul class="header--level1__menu">
+                        <li class="button">
+                            <a href="/uvod">Úvod</a>
+                        </li>
+                        <li class="button">
+                            <a href="/omne">O mně</a>
+                        </li>
+                        <li class="button">
+                            <a href="/sluzby">Co nabízím</a>
+                        </li>
+                        <li class="button">
+                            <a href="/cenik">Ceník</a>
+                        </li>
+                        <li class="button"> 
+                            <a href="/kontakt">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>  
+            </div> 
+       
+             <div class="header--photo">
+             </div>
+        </section>
+
+{{ content | safe }}
+
+ <section class="form">
+            <div class="form--headline">
+                <h2>Chcete i vy svatbu snů?</h2>
+            </div>
+            <p>Zanechte mi na sebe kontakt a krátkou zprávu.</p>
+    
+            <form action="http://formular.itgirls.cz" method="post"></form>
+             <div class="form--field">
+                <label for="jmeno">Jméno a příjmení <span class="recquired"></span>*</label>
+                <input type="text" name="jmeno" id="jmeno" placeholder="Jan Novák">
+            </div>
+            <div class="form--field">
+                <label for="mail">Email <span class="recquired"></span>*</label>
+                <input type="text" name="mail" id="mail" placeholder="email@email.cz">
+            </div>
+            <div class="form--field">
+                <label for="telefon">Telefonní číslo <span class="recquired"></span>*</label>
+                <input type="text" name="telefon" id="telefon" placeholder="+420 XXX XXX XXX">
+            </div>
+            <div class="form--field">
+                <label for="zprava">Zpráva</label>
+                <textarea name="zprava" id="zprava" rows="8" placeholder="Zde zanechte Váš vzkaz"></textarea>
+            </div>
+            <div class="form--button">
+                <button type="submit">Odeslat</button>
+            </div>
+        
+        </section>
+            
+        <section class="footer">
+            <p>Svatba snů, IČ: 123456789, Pod Altánem 342, Praha 1, 110 00 </p>
+        </section>
+    </main>
+
+    
+</body>
+</html>
